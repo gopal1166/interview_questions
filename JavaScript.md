@@ -1,6 +1,40 @@
+## index | Date: 04-06-2021
+1.  callback function and example
+2.  s
+3.  s
+4.  
+
+**Callback function:**
+  a function passed as an argument to another function to be executed later.  
+Example:  
+```
+/**
+ * Callback function with example: processing response after getting api response
+ *
+ * @param {string} url any api
+ * @param {*} callbackFun callback function to be executed right after main one
+ * 
+ */
+function makeAPICall(url, callbackFun) {
+  // we;ll get response here, callbackfun will wait till completion.
+  callbackFun(url);
+}
+
+const url = 'xyz'
+makeAPICall(url, function(url) {
+  console.log("this is callback fun to process the api response of ", url)
+})
+```
+
+
+
+
+
+
+
 # Date: 21-09-2019
 
-1. Differene between var, let and const
+1.Differene between var, let and const
 
 Main difference is Scoping rules
 
