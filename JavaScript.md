@@ -1,10 +1,10 @@
 ## index | Date: 04-06-2021
 1.  callback function and example
-2.  s
-3.  s
+2.  Promises
+3.  Closures
 4.  
 
-**Callback function:**
+#### 1. Callback function:
   a function passed as an argument to another function to be executed later.  
 Example:  
 ```
@@ -26,6 +26,36 @@ makeAPICall(url, function(url) {
 })
 ```
 
+#### 2. Promises:  
+Callback hell: Deeply nested callbacks leads to confusion.  
+To overcome this Promises introduced.  
+
+Has three states.  
+1. Pending: You don’t know if you will get that laptop
+2. Fulfilled: Dad is happy, he buys you a brand new laptop
+3. Rejected: Dad is unhappy, he doesn’t buy you a laptop
+
+Syntax:  
+```
+new Promise(function (resolve, reject) { ... } );
+
+let canIgetOne = true 
+var newLaptop = new Promise(function (resolve, reject) {
+  if(canIgetOne) {
+    resolve('I am getting a new Laptop')
+  } else {
+    reject('No i am not')
+  }
+})
+
+# Consuming
+newLaptop
+.then(msg => console.log(msg))
+.catch(error => console.log(error))
+```  
+
+
+#### 3. Closures:
 
 
 
