@@ -2,7 +2,7 @@
 1.  callback function and example
 2.  Promises
 3.  Closures
-4.  
+4.  iif(Immediately invoked functions)
 
 #### 1. Callback function:
   a function passed as an argument to another function to be executed later.  
@@ -56,8 +56,14 @@ newLaptop
 
 
 #### 3. Closures:
-
-
+A function within a function is technically the closure
+```
+function outerFunc (){
+  function closure(){
+  // some logic
+  } 
+}
+```
 
 
 
