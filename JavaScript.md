@@ -7,7 +7,7 @@
 #### 1. Callback function:
   a function passed as an argument to another function to be executed later.  
 Example:  
-```
+```javascript
 /**
  * Callback function with example: processing response after getting api response
  *
