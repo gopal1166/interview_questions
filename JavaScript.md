@@ -4,10 +4,13 @@
 3.  Closures
 4.  iif(Immediately invoked functions)
 
+
+
 #### 1. Callback function:
   a function passed as an argument to another function to be executed later.  
 Example:  
 ```javascript
+<div style="background-color: rgb(50, 50, 50);">
 /**
  * Callback function with example: processing response after getting api response
  *
