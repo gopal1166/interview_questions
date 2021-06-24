@@ -12,4 +12,5 @@
 10.  http calling
 11.  filters
 12.  v-validate
-13.  
+13.  Child to Parent Communications
+14.  mixins
