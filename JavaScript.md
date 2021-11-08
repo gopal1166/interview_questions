@@ -3,6 +3,9 @@
 2.  Promises
 3.  Closures
 4.  iif(Immediately invoked functions)
+5.  function binding
+6.  pass by value and pass by reference
+7.  
 
 
 
@@ -66,6 +69,34 @@ function outerFunc (){
   // some logic
   } 
 }
+```
+
+#### 4. IIFE (immediately invoked function expressions):
+a function which is invoked right after defining.
+syntax:
+```
+(function(){
+    //...
+})();
+```
+why:
+memory inefficiently usage  
+many variables and function definitions leads to global naming collision.
+ex::
+```
+function add(a,b) {
+    return a + b;
+}
+
+this add will be added to global 'window' object.
+
+console.log(window.add())
+
+ex:2:
+var counter = 10;
+console.log(window.counter); // 10
+
+JavaScript engine will only release the memory allocated for them until when the global object loses the scope.
 ```
 
 
