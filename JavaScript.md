@@ -5,7 +5,7 @@
 4.  iif(Immediately invoked functions)
 5.  function binding
 6.  pass by value and pass by reference
-7.  
+7.  normal function vs arrow function
 
 
 
@@ -99,7 +99,13 @@ console.log(window.counter); // 10
 JavaScript engine will only release the memory allocated for them until when the global object loses the scope.
 ```
 
-
+#### Normal function vs arrow function:
+```
+Syntax
+Arguments binding
+Use of this keyword
+Using a new keyword
+```
 
 
 # Date: 21-09-2019
