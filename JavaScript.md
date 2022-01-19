@@ -8,6 +8,7 @@
 7.  normal function vs arrow function
 8.  chain prototype
 9.  window, document in js
+10. call, apply and bind
 
 
 
