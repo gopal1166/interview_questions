@@ -9,6 +9,7 @@
 8.  chain prototype
 9.  window, document in js
 10. call, apply and bind
+11. window, screen, document
 
 
 
@@ -264,4 +265,14 @@ getDetails.apply(employee, [2000, 'red']); // args as an array
 let newDetails = getDetails.bind(student); // bind returns a function
 newDetails(30000, 'yello');
 
+```
+
+
+## 11. window, screen, document  
+```
+The window is the actual global object.
+
+The screen is the screen, it contains properties about the user's display.
+
+The document is where the DOM is.
 ```
