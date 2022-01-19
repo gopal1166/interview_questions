@@ -237,3 +237,24 @@ function outerFunc() {
 outerFunc();
 ```
 
+## call, apply and bind()  
+```
+**call: **method invokes a function with a given 'this' value and arguments provided one by one  
+**apply:** Invokes the function and allows you to pass in arguments as an array.  
+**bind(): **  returns a new function, allowing you to pass in an array and any number of arguments.  
+
+
+let student = { name: 'Ram', age: 20 };
+let employee = { name: 'Gopal', age: 30 };
+
+function getDetails(salary, color) {
+  console.log(this.name, this.age, salary, color);
+}
+
+getDetails.call(employee, 1000, 'blue'); // arguments
+getDetails.apply(employee, [2000, 'red']); // args as an array
+
+let newDetails = getDetails.bind(student); // bind returns a function
+newDetails(30000, 'yello');
+
+```
