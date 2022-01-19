@@ -237,6 +237,13 @@ function outerFunc() {
 outerFunc();
 ```
 
+## 8. prototype chain:  
+Since JavaScript functions are objects, they can have properties. A particularly important property that each function has is called prototype.
+
+prototype, which is itself an object, inherits from its parent’s prototype, which inherits from its parent’s prototype, and and so on. This is often referred to as the prototype chain. Object.prototype, which is always at the end of the prototype chain (i.e., at the top of the prototypal inheritance tree), contains methods like toString(), hasProperty(), isPrototypeOf(), and so on.
+
+
+
 ## call, apply and bind()  
 ```
 **call: **method invokes a function with a given 'this' value and arguments provided one by one  
