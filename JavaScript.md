@@ -6,6 +6,7 @@
 5.  function binding
 6.  pass by value and pass by reference
 7.  normal function vs arrow function
+8.  chain prototype
 
 
 
