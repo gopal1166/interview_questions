@@ -15,4 +15,6 @@
 13. Redux,
 14. Lazyloading
 15. Strict mode (o highlight potential problems in an application)
-16. 
+16. forward ref
+17. recosulation
+18. render in jock
